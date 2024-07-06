@@ -29,7 +29,7 @@ function ForgetPass() {
     try {
       // Send the email for password reset
       const response = await axios.post(
-        "http://localhost:5000/api/auth/reset-password",
+        "http://13.53.83.119/api/auth/reset-password",
         { 
           email 
         },

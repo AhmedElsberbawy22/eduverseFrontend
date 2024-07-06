@@ -36,7 +36,7 @@ function DownloadPage() {
   };
 
   const handleDownload = () => {
-    window.location.href = "http://localhost:5000/api/download";
+    window.location.href = "http://13.53.83.119/api/download";
   };
 
   return (

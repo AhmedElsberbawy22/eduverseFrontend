@@ -128,7 +128,7 @@ function SignUp() {
     try {
       // Send data to the server
       const response = await axios.post(
-        "http://localhost:5000/api/auth/signup",
+        "http://13.53.83.119/api/auth/signup",
         {
           fullName: formData.username,
           email: formData.email,

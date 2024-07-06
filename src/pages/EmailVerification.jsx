@@ -25,7 +25,7 @@ function EmailVerification() {
     setLoading(true);
     try {
       // Make API call to verify email
-      const response = await axios.get(`http://localhost:5000/api/auth/verify-email/${verificationCode}`);
+      const response = await axios.get(`http://13.53.83.119/api/auth/verify-email/${verificationCode}`);
       
       // Handle response
       if (response.status === 200) {

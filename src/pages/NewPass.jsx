@@ -57,7 +57,7 @@ function ConfirmedPass() {
     try {
       // Send the new password and OTP code for confirmation
       const response = await axios.post(
-        "http://localhost:5000/api/auth/set-new-password",
+        "http://13.53.83.119/api/auth/set-new-password",
         {
           token: otpCode,
           newPassword: newPassword,
