@@ -1,0 +1,107 @@
+.profile-settings-container {
+  font-family: Arial, sans-serif;
+}
+
+.profile-settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-bottom: 2px solid #ccc;
+}
+.profile-settings-header div {
+  display: flex;
+  align-items: center;
+}
+
+.profile-settings-logo {
+  height: 110px;
+}
+
+.profile_image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 10px 35px;
+}
+
+.profile-settings-download {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 0 30px;
+}
+
+.profile-settings-content {
+  background-color: white;
+  margin-bottom: 100px;
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 80%;
+margin: auto;
+}
+
+
+.profile-info-section {
+  width: 100%;
+  max-width: 800px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.profile-info-section h2 {
+  color: #4e4feb;
+  margin-bottom: 20px;
+}
+
+.profile-info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.profile-info-item label {
+  flex: 1;
+  color: #555;
+}
+
+.profile-info-item span,
+.profile-info-item input {
+  flex: 2;
+  padding: 5px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+}
+
+.profile-info-item button {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  color: #4e4feb;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.save-button {
+  padding: 12px 50px;
+  margin-top: 20px;
+  background-color: #4e4feb;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+}
+.profile-settings-content label{
+  font-weight: bold;
+}

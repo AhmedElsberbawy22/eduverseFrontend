@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #eee;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 80px auto;
+}
+.container img {
+  width: 40%;
+}
+.container .parent {
+  width: 45%;
+}
+.container .parent .top {
+  background-color: #4d4deb;
+  padding: 15px 50px;
+}
+.container .top h2 {
+  font-size: 45px;
+  text-transform: capitalize;
+  color: white;
+}
+.container .top p {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.container .form {
+  background-color: white;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+}
+.container .form input {
+  margin: 10px;
+  padding: 15px;
+  border-color: #4d4deb;
+  outline: none;
+}
+.container .form .action_btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: fit-content;
+  background-color: #4d4deb;
+  color: white;
+  border: none;
+  margin: 15px auto;
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 40px 50px 20px; */
+}
+/* .header .logo_parent {
+  position: relative;
+} */
+.header .logo {
+  height: 120px;
+  width: 200px;
+  /* position: absolute;
+  top: -55px; */
+}
+.header a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  margin: 0 30px;
+}
+.main {
+  background-color: #c2dcf2;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main img {
+  width: 45%;
+}
+.main h1 {
+  font-size: 80px;
+  color: #4d4deb;
+  text-transform: uppercase;
+}
+.main p {
+  font-size: 22px;
+  width: 75%;
+  margin: 0px 5px;
+}
+.main .download_btn {
+  font-size: 22px;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #4d4deb;
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin: 25px 5px;
+}
+.download_btn {
+  font-size: 22px;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #4d4deb;
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin: 25px auto;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  list-style: none;
+  text-transform: capitalize;
+  font-size: 19px;
+  cursor: pointer;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+.block {
+  background-color: white;
+  width: 80%;
+  margin: 40px auto;
+}
+.block .head {
+  background-color: #4d4deb;
+  padding: 20px 50px;
+}
+.block h2 {
+  color: white;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.block p {
+  font-size: 22px;
+}
+.block .body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.block .body .left {
+  width: 50%;
+}
+.block .body .text_block {
+  margin: 40px 0;
+}
+.block .body .text_block h3 {
+  color: #4d4deb;
+  font-size: 26px;
+}
+.block .body .text_block p {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.block .body .right img {
+  width: 400px;
+  height: 450px;
+  border: 3px solid black;
+}
+
+.started {
+  text-align: center;
+  padding: 50px;
+}
+.started h3 {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #4d4deb;
+}
+.started p {
+  font-size: 23px;
+  width: 50%;
+  margin: auto;
+  font-weight: 300;
+}
+
+.started :nth-child(2) {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+.discover {
+  text-align: center;
+  background-color: #4d4deb;
+  color: white;
+  padding: 30px;
+}
+.discover h3 {
+  text-transform: capitalize;
+  font-size: 50px;
+}
+.discover .blog_btn {
+  background-color: white;
+  color: #4d4deb;
+  font-size: 22px;
+  padding: 12px 30px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 60px;
+}
+/* .quations .num {
+  font-size: 22px;
+  color: #4d4deb;
+}
+.quations {
+  padding: 30px 100px;
+  text-transform: capitalize;
+  line-height: 1.8;
+  font-size: 18px;
+}
+.quations a{
+  text-decoration: none;
+  color: black;
+} */
+#faqs {
+  font-size: 30px;
+  color: white;
+}
+#faqs .body {
+  flex-direction: column;
+  align-items: start;
+  line-height: 2.5;
+}
+#faqs p {
+  color: black;
+  font-size: 22px;
+  font-weight: 600;
+  font-weight: normal;
+}
+#faqs h3 {
+  text-transform: uppercase;
+}
+#faqs a {
+  color: black;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-decoration: none;
+}
+#faqs span {
+  color: #4d4deb;
+}
+.media_links {
+  padding: 10px;
+  background-color: rgb(207, 207, 207);
+}
+.media_links .icons {
+  margin: auto;
+  width: fit-content;
+}
+.media_links .icons svg {
+  width: 50px;
+  margin: 0 20px;
+}
+.copy_right {
+  background-color: #959595;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+@media (max-width: 1150px) {
+  .block {
+    width: 90%;
+  }
+  /* .block .body {
+    flex-direction: column;
+  } */
+}
+@media (max-width: 880px) {
+  .header img {
+    left: -70px;
+  }
+  .main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main h1 {
+    font-size: 40px;
+  }
+  .main p {
+    font-size: 20px;
+    width: 100%;
+  }
+  .main img {
+    width: 320px;
+  }
+  .nav ul {
+    width: 100%;
+    font-size: 18px;
+  }
+  .block .body {
+    flex-direction: column;
+  }
+  .block h2,
+  .block h3 {
+    font-size: 30px;
+  }
+  .block p {
+    font-size: 20px;
+  }
+  .block .body .left {
+    width: 90%;
+  }
+  .started p {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    padding: 20px 0;
+    margin: 0;
+  }
+  .header .nav {
+    width: 70%;
+    font-size: 16px;
+  }
+  .header .nav a {
+    margin: 0 15px;
+  }
+  .header .logo {
+    left: -30px;
+    top: -40px;
+    width: 200px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .main div {
+    text-align: center;
+  }
+  .nav ul {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+  }
+  .nav ul li {
+    margin: 15px;
+  }
+  .block {
+    width: 100%;
+  }
+  .block .head {
+    width: 100%;
+    padding: 15px;
+  }
+  .block .body {
+    width: 100%;
+    padding: 15px;
+  }
+  .started {
+    padding: 30px 0;
+  }
+  .started p {
+    font-size: 20px;
+  }
+  .download_btn {
+    font-size: 18px;
+  }
+  .discover {
+    padding: 30px 0;
+  }
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .container .parent {
+    width: 100%;
+  }
+  .container img {
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    padding: 0;
+    margin: 0;
+  }
+  .logo_parent {
+    width: 100px;
+  }
+  .logo_parent img {
+    width: 100% !important;
+  }
+  .header .nav {
+    padding: 30px;
+  }
+  .header .nav a {
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .parent {
+    width: 70% !important;
+  }
+  .container img {
+    width: 60%;
+  }
+  #faqs p {
+    font-size: 22px;
+  }
+  #faqs a {
+    font-size: 15px;
+  }
+  .icons svg {
+    height: 50px;
+    width: 50px !important;
+  }
+  .nav ul li {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .copy_right {
+    font-size: 14px;
+  }
+}
+.error {
+  border-color: red !important;
+  font-size: 14px;
+}
+.not_found {
+  text-align: center;
+}
+
+.user-menu {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.user-menu span {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.user-menu:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f1f1f1;
+}
+.birthdate {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.birthdate div {
+  text-align: center;
+}
+.birthdate label {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+}
+.birthdate input {
+  width: 60px;
+  height: 40px;
+  border-radius: 5px;
+}
+.gender {
+  padding: 0 0 30px 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
